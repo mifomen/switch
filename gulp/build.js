@@ -1,11 +1,16 @@
 var gulp = require('gulp');
 var cfg = require('../package.json').config;
-gulp.task('build', function() {
-console.log('build')
+var run = require("run-sequence");
 
-  });
 
-gulp.task('default', function() {
-console.log(cfg)
-
-  });
+gulp.task("build", function(fn) {
+  run(
+    "clean",
+    "copy",
+    "sass",
+    "minjs",
+    // "images",
+    // "symbols",
+    fn
+  );
+});

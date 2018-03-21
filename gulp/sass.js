@@ -18,7 +18,7 @@ var minify = require("gulp-csso");
 var del = require("del");
 
 gulp.task('sass', function() {
-  return gulp.src( cfg.src.sass + '/style.sass')
+  return gulp.src( cfg.src.sass + '/style.{scss,sass}')
 
   .pipe(plumber())
      .pipe(sass().on('error', sass.logError))
