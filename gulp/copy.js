@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var run = require("run-sequence");
 
 gulp.task("copy", function() {
   return gulp.src([

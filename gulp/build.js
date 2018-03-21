@@ -2,8 +2,7 @@ var gulp = require('gulp');
 var cfg = require('../package.json').config;
 var run = require("run-sequence");
 
-
-gulp.task("build", function(fn) {
+gulp.task("build", function(evt) {
   run(
     "clean",
     "copy",
@@ -11,6 +10,6 @@ gulp.task("build", function(fn) {
     "minjs",
     // "images",
     // "symbols",
-    fn
+    evt
   );
 });

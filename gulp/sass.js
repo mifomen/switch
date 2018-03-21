@@ -8,22 +8,18 @@ var csso = require('gulp-csso');
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer"); 
 
-
 var browserSync = require('browser-sync').create(); 
 var csso = require('gulp-csso'); 
-
 var mqpacker = require("css-mqpacker"); 
 var minify = require("gulp-csso"); 
-
-var del = require("del");
+// var del = require("del");
 
 gulp.task('sass', function() {
   return gulp.src( cfg.src.sass + '/style.{scss,sass}')
-
   .pipe(plumber())
-     .pipe(sass().on('error', sass.logError))
+  .pipe(sass().on('error', sass.logError))
   .pipe(postcss([ 
-  autoprefixer({ browsers: [
+    autoprefixer({ browsers: [
   'last 2 versions', 
   'ie 11',
   'ie 10',
@@ -35,6 +31,6 @@ gulp.task('sass', function() {
 ]))
   .pipe(csso())
   .pipe(rename('style.min.css'))
-  .pipe(gulp.dest('build/css'))
+  .pipe(gulp.dest(cfg.build.css))
   .pipe(browserSync.stream());
 });

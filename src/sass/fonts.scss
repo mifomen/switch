@@ -1,32 +1,32 @@
 $defaultFont:'Arial', 'Helvetica', sans-serif;
 $fontStyle: normal;
 $fontNautilus: 'Nautilus Pompilius', $defaultFont ;
-$fontNovaR: 'ProximaNovaRegular', $defaultFont;
-$fontNovaB: 'ProximaNovaBold', $defaultFont;
-$fontNovaL: 'ProximaNovaLight', $defaultFont;
+$fontNovaR: 'Proxima Nova Regular', $defaultFont;
+$fontNovaB: 'Proxima Nova Bold', $defaultFont;
+$fontNovaL: 'Proxima Nova Light', $defaultFont;
 $fontDisplay: auto; //block swap auto
 
 @font-face {
-  font-family: 'NautilusPompilius';
+  font-family: 'Nautilus Pompilius';
   src: url(/fonts/NautilusPompilius.woff);
   font-display: $fontDisplay;
   font-style: $fontStyle;
 }
 @font-face {
-  font-family: 'ProximaNovaRegular';
+  font-family: 'Proxima Nova Regular';
   src: url(/fonts/ProximaNovaRegular/ProximaNovaRegular.woff);
   font-weight: normal;
   font-display: $fontDisplay;
   font-style: $fontStyle;
 }
 @font-face {
-  font-family: 'ProximaNovaBold';
+  font-family: 'Proxima Nova Bold';
   src: url(/fonts/ProximaNovaBold/ProximaNovaBold.woff);
   font-display: $fontDisplay;
   font-style: $fontStyle;
 }
 @font-face {
-  font-family: 'ProximaNovaLight';
+  font-family: 'Proxima Nova Light';
   src: url(/fonts/ProximaNovaLight/ProximaNovaLight.woff);
   font-display: $fontDisplay;
   font-style: $fontStyle;
