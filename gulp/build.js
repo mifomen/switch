@@ -4,8 +4,11 @@ var run = require("run-sequence");
 
 gulp.task("build", function(evt) {
   run(
-    "clean",
-    "copy",
+    "full-clean",
+    // "copy",
+    "retype-images",
+    "retype-fonts",
+    "html",
     "sass",
     "minjs",
     // "images",

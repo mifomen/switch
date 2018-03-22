@@ -4,6 +4,9 @@ $fontNautilus: 'Nautilus Pompilius', $defaultFont ;
 $fontNovaR: 'Proxima Nova Regular', $defaultFont;
 $fontNovaB: 'Proxima Nova Bold', $defaultFont;
 $fontNovaL: 'Proxima Nova Light', $defaultFont;
+$fontMontserrat: 'Montserrat Regular', $defaultFont;
+$fontMyriadPro: 'MyriadPro Regular', $defaultFont;
+
 $fontDisplay: auto; //block swap auto
 
 @font-face {
@@ -14,20 +17,32 @@ $fontDisplay: auto; //block swap auto
 }
 @font-face {
   font-family: 'Proxima Nova Regular';
-  src: url(/fonts/ProximaNovaRegular/ProximaNovaRegular.woff);
+  src: url(/fonts/ProximaNovaRegular.woff);
   font-weight: normal;
   font-display: $fontDisplay;
   font-style: $fontStyle;
 }
 @font-face {
   font-family: 'Proxima Nova Bold';
-  src: url(/fonts/ProximaNovaBold/ProximaNovaBold.woff);
+  src: url(/fonts/ProximaNovaBold.woff);
   font-display: $fontDisplay;
   font-style: $fontStyle;
 }
 @font-face {
   font-family: 'Proxima Nova Light';
-  src: url(/fonts/ProximaNovaLight/ProximaNovaLight.woff);
+  src: url(/fonts/ProximaNovaLight.woff);
+  font-display: $fontDisplay;
+  font-style: $fontStyle;
+}
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url(/fonts/MontserratRegular.woff);
+  font-display: $fontDisplay;
+  font-style: $fontStyle;
+}
+@font-face {
+  font-family: 'MyriadPro Regular';
+  src: url(/fonts/MyriadProRegular.woff);
   font-display: $fontDisplay;
   font-style: $fontStyle;
 }

@@ -14,3 +14,10 @@
 // nav.classList.toggle("menu-nav--closed")});
 // alert('sdfasdgdfg')
 console.log('mifomen')
+
+
+var HeaderFrame =  document.querySelector(".header__button")
+HeaderFrame.addEventListener("click",function(evt) {
+evt.preventDefault()
+
+})

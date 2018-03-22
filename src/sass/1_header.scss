@@ -15,6 +15,12 @@
   font-family: $fontNovaR;
   padding:0;
   margin:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ align-content: flex-end;
+
+
 }
 .nav-menu {
   margin-left: 30px;
@@ -108,5 +114,57 @@
       font-family: $fontNovaL;
       font-size: 16px;
     }
+  }
+}
+
+.header__{
+  &name {
+    font-family: $fontMontserrat;
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    align-self: center;
+    margin-top: 200px;
+  }
+  &button {
+    background-color: rgb(84, 209, 84);
+  color: white;
+  // width: 350px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  font-family: $fontMyriadPro;
+  text-decoration: none;
+  font-weight: bold;
+   align-self: center;
+    margin-bottom: 200px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &scroll-down{
+    background-color: rgba(#fff, 0.7);
+    align-self: center;
+    color: black;
+    // border-top-right-radius: 25px;
+    border-radius: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: $fontMyriadPro;
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    background-image: url(../img/arrow-to-bottom.png);
+    background-repeat: no-repeat;
+    background-position: 83% 50%;
+      &:hover {
+         text-decoration: udnerline;;
+      }
   }
 }
