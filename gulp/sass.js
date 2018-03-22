@@ -20,7 +20,7 @@ gulp.task('sass', function() {
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss([ 
     autoprefixer({ browsers: [
-  'last 2 versions', 
+  'last 10 versions', 
   'ie 11',
   'ie 10',
   'Android >= 4.1', 
