@@ -1,11 +1,84 @@
 .shop-window {
 
-  background-color: $GreenColor;
-  display: flex;
-  &__title {
-    color: rgb(39,134,39);
+    background-color: $GreenColor;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    // border:2px solid darkblue;
+    text-align: center;
+    &__title {
+      color: rgb(39,134,39);
+      width: 100%;
+      font-size: 21px;
+   
+
+    }
+    &__sub-title {
+      width: 100%;
+      color: rgb(43,155,43);
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    &__list {
+
+      // border:5px solid darkblue;
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       margin-right: 10.5%;
+       margin-left: 10.5%;
+       margin-bottom: 20px;
+    }  
+    &__block-for-img {
+          margin-top: 30px;
+          overflow: hidden;
+    }
+    &__img {
+          transition: ease 300ms;
+          &:hover {
+            transition: ease 300ms;
+            transform: scale(1.05) translateY(-4px);
+          }
+    }
+
+    &__button {
+      border:1px solid #2b9b2b;
+      color:white;
+      background-color: white;
+      color:green;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-family: $fontNovaR;
+         margin-bottom: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+
   }
-  &__sub-title {
-    color: rgb(43,155,43);
-  }
+.first-button {
+      border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
+
 }
+.last-button {
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+margin-left: -1px;
+}
+.active {
+  background-color: #2b9b2b;
+  color: white;
+
+}
+.mb-20 {
+
+}
+// .shop-window__title{
+//       color: rgb(39,134,39);
+//       width: 230px;
+//       background-color: red;
+//       border:2px solid darkblue;
+//     }
