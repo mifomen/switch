@@ -1,0 +1,11 @@
+.shop-window {
+
+  background-color: $GreenColor;
+  display: flex;
+  &__title {
+    color: rgb(39,134,39);
+  }
+  &__sub-title {
+    color: rgb(43,155,43);
+  }
+}

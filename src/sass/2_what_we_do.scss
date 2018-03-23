@@ -1,0 +1,81 @@
+.main-features {
+  background-color: rgba(255,255,255,1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 70px; //&&&&&&&&&&&&&&&&&
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    color: rgb(130,130,130);
+    font-family: $fontMontserrat;
+    position: relative;
+    &:after {
+      position:absolute;
+      bottom: -10px;
+      left: 48%;
+      // transition: translateX(20%);
+      content: "";
+      width: 45px;
+      height: 2px;
+      background-color: rgb(130,130,130);
+    }
+  }
+  &__sub-title {
+    text-align: center;
+    font-size: 16px;
+    width:100%;
+    color: rgb(179,179,179);
+  }
+  &__card {
+    width:100%;
+    // border:2px solid darkblue;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    &-item{
+      // border:2px solid darkorange;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      &-img {
+        width: 90px;
+        background-color: rgb(225,243,225);
+        border: 27px solid rgb(225,243,225);
+        border-radius: 25px;
+      }
+      &-title {
+        font-size: 24px;
+        color: rgb(130,130,130);
+        font-familt: $fontMyriadPro;
+      }
+      &-description {
+        font-size: 15px;
+        color: rgb(130,130,130);
+        font-familt: $fontMyriadPro;
+   
+        text-align: center;
+      }
+      &-button {
+        font-size: 16px;
+        color: white;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: $GreenColor;
+        font-family: $fontNovaB;
+        border-radius: 25px;
+        text-decoration: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
