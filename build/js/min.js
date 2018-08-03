@@ -1,1 +1,0 @@
-console.log("mifomen");var HeaderFrame=document.querySelector(".header__button");HeaderFrame.addEventListener("click",function(e){e.preventDefault()});
