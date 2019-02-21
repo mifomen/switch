@@ -34,26 +34,26 @@
       // border:1px solid #2b9b2b;
       // color:white;
       border-radius: 25px;
-background-color: #54d154;
+      background-color: #54d154;
       // color:green;
       color: #a59d9d;
       padding: 10px 15px;
       text-decoration: none;
       font-family: $fontNovaR;
-     
+      
       padding-left: 20px;
       padding-right: 20px;
       &:hover {
         text-decoration: underline;
       }
       &-fill {
-background-color: #3eba3e;
-height: 400px;
-width: 100%;
-display: flex;
-justify-content: center;
-align-content: center;
-align-items: center;
+        background-color: #3eba3e;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
       }
-}
-}
+    }
+  }
