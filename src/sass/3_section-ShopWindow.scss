@@ -1,7 +1,7 @@
 .shop-window {
 
-    background-color: $GreenColor;
-    display: flex;
+  background-color: $GreenColor;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
     // border:2px solid darkblue;
@@ -10,7 +10,7 @@
       color: rgb(39,134,39);
       width: 100%;
       font-size: 21px;
-   
+      
 
     }
     &__sub-title {
@@ -22,24 +22,24 @@
     &__list {
 
       // border:5px solid darkblue;
-       width: 100%;
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-around;
-       margin-right: 10.5%;
-       margin-left: 10.5%;
-       margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-right: 10.5%;
+      margin-left: 10.5%;
+      margin-bottom: 20px;
     }  
     &__block-for-img {
-          margin-top: 30px;
-          overflow: hidden;
+      margin-top: 30px;
+      overflow: hidden;
     }
     &__img {
-          transition: ease 300ms;
-          &:hover {
-            transition: ease 300ms;
-            transform: scale(1.05) translateY(-4px);
-          }
+      transition: ease 300ms;
+      &:hover {
+        transition: ease 300ms;
+        transform: scale(1.05) translateY(-4px);
+      }
     }
 
     &__button {
@@ -50,7 +50,7 @@
       padding: 10px 15px;
       text-decoration: none;
       font-family: $fontNovaR;
-         margin-bottom: 20px;
+      margin-bottom: 20px;
       &:hover {
         text-decoration: underline;
       }
@@ -58,24 +58,24 @@
 
 
   }
-.first-button {
-      border-top-left-radius: 25px;
-border-bottom-left-radius: 25px;
+  .first-button {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 
-}
-.last-button {
-border-top-right-radius: 25px;
-border-bottom-right-radius: 25px;
-margin-left: -1px;
-}
-.active {
-  background-color: #2b9b2b;
-  color: white;
+  }
+  .last-button {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-left: -1px;
+  }
+  .active {
+    background-color: #2b9b2b;
+    color: white;
 
-}
-.mb-20 {
+  }
+  .mb-20 {
 
-}
+  }
 // .shop-window__title{
 //       color: rgb(39,134,39);
 //       width: 230px;

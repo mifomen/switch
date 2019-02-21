@@ -1,5 +1,5 @@
-.section-five {
-  background-color: #f2f1f1;
+.section-six {
+  background-color: #54d154;
   font-family: $fontMontserrat;
   text-align: center;
   display: flex;
@@ -10,7 +10,7 @@
   &__title {
 
 
-    color: #828181;
+    color: #207b20;
 
     font-size: 21px;
     font-weight: 300;
@@ -18,64 +18,42 @@
 
     letter-spacing: 3.2px;
     position: relative;
-        &::after {
+    &::after {
       position: absolute;
       display: block;
       content:"";
       right:50%;
       transform: translateX(50%);
       bottom:-15px;
-      background-color: #828181;
+      background-color: #207b20;
       width: 45px;
       height: 3px;
     }
   }
-
-  &__text {
-/* Style for "Lorem ipsu" */
-margin-top: 20px;
-color: #b7b3b3;
-font-family: $fontMontserrat;
-font-size: 15px;
-font-weight: 300;
-/* Text style for "L, orem ip" */
-
-
-/* Text style for "Proin grav" */
-
-
-  }
-&__button {
+  &__button {
       // border:1px solid #2b9b2b;
       // color:white;
       border-radius: 25px;
- background-color: #dddcdc;
+background-color: #54d154;
       // color:green;
       color: #a59d9d;
       padding: 10px 15px;
       text-decoration: none;
       font-family: $fontNovaR;
-      margin-top: 40px;
-      margin-bottom: 40px;
+     
       padding-left: 20px;
       padding-right: 20px;
       &:hover {
         text-decoration: underline;
       }
-}
-&__brands {
-  // outline: 3px solid green;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-align: center;
-  color: #a59d9d;
-  & img {
-    padding: 4%;
-    // margin:2%;
-    // outline:2px solid green;
-    filter: grayscale(1);
-  }
+      &-fill {
+background-color: #3eba3e;
+height: 400px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+      }
 }
 }

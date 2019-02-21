@@ -1,4 +1,5 @@
 .section-four {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,8 +10,8 @@
     /* Style for "TESTIMONIA" */
     position: relative;
     margin-top: 40px;
-    width: 193px;
-    height: 15px;
+    // width: 193px;
+    // height: 15px;
     color: #828181;
     font-family: $fontMontserrat;
     font-size: 21px;
@@ -48,10 +49,86 @@
     font-family: "Montserrat Light";
     font-weight: 300;
   }
-  &__slider-txt {
-    margin-top: 50px;
-    width: 40%;
+
+  &__feedback {
+    position: relative;
+    width: 60%;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__button {
+      position: absolute;
+      top: 50%;
+      transition: 300ms ease;
+    }
+
+    &__slider-txt {
+      margin-top: 50px;
+      width: 50%;
+    // height: 400px;
     text-align: center;
     /* Style for "“Awalnya s" */
   }
+  &__card {
+    // background-color: red;
+    // border:22px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    // width: 200px;
+  }
+  &__img {
+    // width: 320px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid #e1e1e1;
+    border-radius: 50%;
+    padding:5px;
+  
+  }
+  &__author {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: $fontNovaB;
+
+    &-name {
+font-weight: 400;
+    font-family: $fontNovaR;
+
+
+    }
+    &-sub-name {
+      color: #ccc;
+      font-weight: 700;
+
+
+    }
+  }
+}
+}
+.button-left {
+ transform: rotate(-90deg);
+
+ left:2%;
+ &:hover {
+   transform: rotate(-90deg) scale(1.2);
+ }
+}
+.button-right {
+ transform: rotate(90deg);
+ right:2%;
+ &:hover {
+   transform: rotate(90deg) scale(1.2);
+ }
 }
