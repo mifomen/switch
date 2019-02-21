@@ -1,0 +1,57 @@
+.section-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  &__title {
+    /* Style for "TESTIMONIA" */
+    position: relative;
+    margin-top: 40px;
+    width: 193px;
+    height: 15px;
+    color: #828181;
+    font-family: $fontMontserrat;
+    font-size: 21px;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* Text style for "T, ESTIMON" */
+    letter-spacing: 3.2px;
+    &::after {
+      position: absolute;
+      display: block;
+      content:"";
+      right:50%;
+      transform: translateX(50%);
+      bottom:-15px;
+      background-color: #828181;
+      width: 45px;
+      height: 3px;
+    }
+  }
+  &__text {
+    margin-top: 40px;
+    /* Style for "Lorem ipsu" */
+
+
+    color: #b7b3b3;
+
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 300;
+    /* Text style for "L, orem ip" */
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    /* Text style for "Proin grav" */
+    font-family: "Montserrat Light";
+    font-weight: 300;
+  }
+  &__slider-txt {
+    margin-top: 50px;
+    width: 40%;
+    text-align: center;
+    /* Style for "“Awalnya s" */
+  }
+}
