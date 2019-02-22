@@ -8,16 +8,13 @@
   align-items: center;
 
   &__title {
-
-
     color: #207b20;
-
     font-size: 21px;
     font-weight: 300;
     text-transform: uppercase;
-
     letter-spacing: 3.2px;
     position: relative;
+  
     &::after {
       position: absolute;
       display: block;
@@ -31,29 +28,87 @@
     }
   }
   &__button {
-      // border:1px solid #2b9b2b;
-      // color:white;
+  
+    border-radius: 25px;
+    background-color: #54d154;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: $fontNovaR;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-family: $fontNovaB;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+    &-fill {
+      background-color: #3eba3e;
+      height: 400px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.section-six__card {
+  display: flex;
+  flex-direction: row;
+ 
+
+
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  &-wrapper-img {
+    position: relative;
+    width: 130px;
+    height: 130px;
+
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    &-img {
+      // padding:15%;
+      position: absolute;
+      bottom:0;
+      right:50%;
+      transform: translateX(50%);
+    }
+
+    &-border {
+      display: block;
+      width:5px;
+      height: 80px;
+      content:"";
+      background-color: #207b20;
+
+    }
+    &-title {
+
+      color: #ffffff;
+      font-family: $fontNovaB;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    &-list-img {
+      background-color: #fff;
+      padding:5%;
       border-radius: 25px;
-      background-color: #54d154;
-      // color:green;
-      color: #a59d9d;
-      padding: 10px 15px;
-      text-decoration: none;
-      font-family: $fontNovaR;
-      
-      padding-left: 20px;
-      padding-right: 20px;
-      &:hover {
-        text-decoration: underline;
-      }
-      &-fill {
-        background-color: #3eba3e;
-        height: 400px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-      }
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
     }
   }
