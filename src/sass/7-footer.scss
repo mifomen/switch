@@ -1,0 +1,178 @@
+.footer {
+  background-color: rgba(0,0,0,0.5);
+
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-self: center;
+  align-content: center;
+  &__about-us {
+    width: 300px;    
+    text-align:center;
+
+    &-title {
+      text-align:center;
+      color: #dddddd;
+      font-family: $fontMontserrat;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 16px;
+      position: relative;
+      &::after {
+        position: absolute;
+        display: block;
+        content:"";
+        right:50%;
+        transform: translateX(50%);
+        bottom:-5px;
+        background-color: #fff;
+        width: 30px;
+        height: 2px;
+      }
+    }
+
+    &-text {
+
+
+    }
+    &-list-img {
+      background-color: #fff;
+      padding:5%;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+
+
+  &__recent-posts {
+    width: 300px;
+
+    &-title {
+      text-align:center;
+      color: #dddddd;
+      font-family: $fontMontserrat;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 16px;
+      position: relative;
+      &::after {
+        position: absolute;
+        display: block;
+        content:"";
+        right:50%;
+        transform: translateX(50%);
+        bottom:-5px;
+        background-color: #fff;
+        width: 30px;
+        height: 2px;
+      }
+    }
+    &-img {
+      margin-right: 5px;
+    }
+    &-card {
+      display: flex;
+      margin-top: 10px;
+
+      &--section-two {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+      }
+      &--title {
+        width: 100%;
+        color: #cccccc;
+        font-weight: 300;
+        font-family: $fontMontserrat;
+
+
+      }
+      &--label {
+        margin-top:2px;
+
+
+        color: #ffffff;
+        font-family: $fontMontserrat;
+        font-size: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+        border-radius: 2px;
+      }
+    }
+    &-img {
+
+    }
+
+
+
+  }
+  &__contact-us {
+    width: 300px;
+
+
+    &-title {
+      text-align:center;
+      color: #dddddd;
+      font-family: $fontMontserrat;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 16px;
+      position: relative;
+      &::after {
+        position: absolute;
+        display: block;
+        content:"";
+        right:50%;
+        transform: translateX(50%);
+        bottom:-5px;
+        background-color: #fff;
+        width: 30px;
+        height: 2px;
+      }
+    }
+    &-text {
+      text-align: center;
+    }
+
+    &-form {
+      display: flex;
+      flex-wrap: wrap;
+
+
+      &-input {
+        width: 100%;
+ 
+
+      }
+      &-submit {
+
+      }
+    }
+  }
+}
+
+
+  .color1 {
+    background-color: #54d154;
+  }
+  .color2 {
+    background-color: #ffba00;
+  }
+  .color3 {
+    background-color: #089dea;
+  }
+  .color4 {
+    background-color: #f34d04;
+  }
+  .color5 {
+    background-color: #ffba00;
+  }
+
