@@ -1,17 +1,25 @@
 .footer {
   background-color: rgba(0,0,0,0.5);
-
+& * {
+  outline: 2px solid green;
+}
 
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-self: center;
-  align-content: center;
+
   &__about-us {
     width: 300px;    
     text-align:center;
-
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+  align-self: flex-start;
+  align-content: flex-start;
     &-title {
+      // margin:0;
+      // padding:0;
       text-align:center;
       color: #dddddd;
       font-family: $fontMontserrat;
@@ -149,7 +157,7 @@
 
       &-input {
         width: 100%;
- 
+
 
       }
       &-submit {
@@ -160,19 +168,19 @@
 }
 
 
-  .color1 {
-    background-color: #54d154;
-  }
-  .color2 {
-    background-color: #ffba00;
-  }
-  .color3 {
-    background-color: #089dea;
-  }
-  .color4 {
-    background-color: #f34d04;
-  }
-  .color5 {
-    background-color: #ffba00;
-  }
+.color1 {
+  background-color: #54d154;
+}
+.color2 {
+  background-color: #ffba00;
+}
+.color3 {
+  background-color: #089dea;
+}
+.color4 {
+  background-color: #f34d04;
+}
+.color5 {
+  background-color: #ffba00;
+}
 
