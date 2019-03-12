@@ -6,6 +6,7 @@ gulp.task("build", function(evt) {
   run(
     "full-clean",
     // "copy",
+    "bp-grid-css",
     "retype-images",
     "retype-fonts",
     "html",
